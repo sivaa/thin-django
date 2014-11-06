@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Thin Django - Images with Water Mark </title>
+    </head>
+    <body>
+        <h1> Images with Water Mark </h1>
+
+        <img src=" {% url 'water_mark_image' water_mark_text='Company ABC' image_url='http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2013/1/9/1357751342331/DJANGO-UNCHAINED-008.jpg' %} "/>
+        <img src=" {% url 'water_mark_image' water_mark_text='Company MNO' image_url='http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2013/1/9/1357751342331/DJANGO-UNCHAINED-008.jpg' %} "/>
+        <img src=" {% url 'water_mark_image' water_mark_text='Company XYZ' image_url='http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2013/1/9/1357751342331/DJANGO-UNCHAINED-008.jpg' %} "/>
+
+    </body>
+</html>
