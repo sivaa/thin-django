@@ -21,7 +21,7 @@ urlpatterns = (
 settings.configure(
                    DEBUG            =   os.environ.get('DEBUG', 'on') == 'on',
                    ALLOWED_HOSTS    =   os.environ.get('ALLOWED_HOSTS', 'localhost').split(","),
-                   SECERT_KEY       =   os.environ.get('SECERT_KEY', '{{ secert_key }}'),
+                   SECERT_KEY       =   os.environ.get('SECRET_KEY', '{{ secret_key }}'),
                    ROOT_URLCONF     =   __name__,
                    MIDDLEWARE_CLASSES = (
                                          'django.middleware.common.CommonMiddleware',
