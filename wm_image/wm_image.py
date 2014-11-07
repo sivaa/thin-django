@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(__file__)
 settings.configure(
                    DEBUG            =   os.environ.get('DEBUG', 'on') == 'on',
                    ALLOWED_HOSTS    =   os.environ.get('ALLOWED_HOSTS', 'localhost').split(","),
-                   SECERT_KEY       =   os.environ.get('SECERT_KEY', ''),
+                   SECERT_KEY       =   os.environ.get('SECRET_KEY', ''),
                    ROOT_URLCONF     =   __name__,
 
                    MIDDLEWARE_CLASSES   = (
